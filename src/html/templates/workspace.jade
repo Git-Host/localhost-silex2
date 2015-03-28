@@ -1,0 +1,75 @@
+.silex-workspace
+  // settings
+  .settings-background
+  .silex-settings-dialog
+    include ./settings-dialog.jade
+
+  // file explorer
+  .silex-fileexplorer
+    link(rel='stylesheet', href='../cloud-explorer/app/css/style.css')
+    #CE(data-ng-app='ceDirectives')
+      .ce-browser
+
+  // menu
+  .silex-menu
+    link(rel='stylesheet', href='css/closure/menu.css')
+    link(rel='stylesheet', href='css/closure/menubar.css')
+    link(rel='stylesheet', href='css/closure/menubutton.css')
+    link(rel='stylesheet', href='css/closure/menuitem.css')
+    link(rel='stylesheet', href='css/closure/menuseparator.css')
+    a.website-name Untitled website
+
+  // page tool
+  .silex-page-tool
+    include ./page-tool.jade
+
+  // properties tool
+  .silex-property-tool
+    include ./property-tool.jade
+
+  // stage
+  .silex-stage
+    .silex-stage-body(data-silex-type='container')
+
+  // dialogs background
+  .dialogs-background
+
+  // html editor
+  .silex-html-editor.ace-editor-container
+    .title-bar Edit the HTML content
+    .ace-editor
+    .close-btn
+
+  // css editor
+  .silex-css-editor.ace-editor-container
+    .title-bar Edit Silex CSS styles
+    .ace-editor
+    .close-btn
+
+  // js editor
+  .silex-js-editor.ace-editor-container
+    .title-bar Edit Silex JS scripts
+    .ace-editor
+    .close-btn
+
+  // text editor
+  .silex-texteditor
+    link(rel='stylesheet', href='css/closure/button.css')
+    link(rel='stylesheet', href='css/closure/dialog.css')
+    link(rel='stylesheet', href='css/closure/linkbutton.css')
+    link(rel='stylesheet', href='css/closure/menu.css')
+    link(rel='stylesheet', href='css/closure/menuitem.css')
+    link(rel='stylesheet', href='css/closure/menuseparator.css')
+    link(rel='stylesheet', href='css/closure/tab.css')
+    link(rel='stylesheet', href='css/closure/tabbar.css')
+    link(rel='stylesheet', href='css/closure/toolbar.css')
+    link(rel='stylesheet', href='css/closure/colormenubutton.css')
+    link(rel='stylesheet', href='css/closure/palette.css')
+    link(rel='stylesheet', href='css/closure/colorpalette.css')
+    link(rel='stylesheet', href='css/closure/editor/bubble.css')
+    link(rel='stylesheet', href='css/closure/editor/dialog.css')
+    link(rel='stylesheet', href='css/closure/editor/linkdialog.css')
+    link(rel='stylesheet', href='css/closure/editortoolbar.css')
+    .toolbar
+    .text-field
+    .close-btn

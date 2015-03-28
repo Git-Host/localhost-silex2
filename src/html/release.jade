@@ -1,0 +1,19 @@
+!!! 5
+head
+  include ./templates/head.jade
+
+  // Silex styles and code
+  link(rel='stylesheet', type='text/css', href='css/admin.min.css')
+  script(type='text/javascript', src='js/admin.min.js')
+
+body.loading-pending.advanced-mode-off
+  include ./templates/body.jade
+
+  // google closure css patches, to be included after the other includes
+  link(rel='stylesheet', type='text/css', href='css/closure-patches.css')
+  script(type='text/javascript', src='js/closure-patches.js')
+
+  // start Silex
+  script(type='text/javascript').
+    // boot silex app
+    new silex.App();
